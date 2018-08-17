@@ -1,0 +1,10 @@
+fa-whatsapp
+ Unicode: f232
+
+fa-facebook-official
+Unicode: f230 #3b5999
+
+fa-envelope-o
+Unicode: f003 #4dc247
+
+<i class="fab fa-facebook"></i>

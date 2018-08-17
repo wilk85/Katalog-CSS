@@ -1,0 +1,87 @@
+body{
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+wrap{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    background: orange;
+    background: gray;
+    text-align: center;
+    margin: 20px 0;    
+    height: 50px;
+    width: 50px;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+ul li .fa{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+}
+
+ul li.facebook{
+    background: #3b5999;
+}
+
+ul li.whatsapp{
+    background: #4dc247;
+}
+
+.slider{
+    position: absolute;
+    top: 0;
+    left: 51px;
+    width: 0px;
+    height: 50px;
+    line-height: 18px;
+    background: #eebb5c;
+    border-radius: 3px;
+    transition: all 500ms ease 300ms;
+    text-align: center;
+    font-weight: 100;
+    font-family: Helvetica, sans-serif;
+}
+
+.slider p{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 500ms ease;
+    opacity: 0;
+}
+
+ul li.facebook div.slider{
+    background: #899bc1;
+}
+
+ul li.whatsapp div.slider{
+    background: #94da90;
+}
+
+ul li:hover .slider{
+    width: 180px;
+    transition: all 700ms ease;
+}
+
+ul li:hover .slider p{
+    opacity: 1;
+    transition: all 500ms ease 300ms;
+}

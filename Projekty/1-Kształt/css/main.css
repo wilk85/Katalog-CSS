@@ -1,0 +1,145 @@
+body{
+    background-color: #cecece;
+    max-height: 90vh;
+    
+}
+#outer{
+    position: relative;
+    background-color: #fff;
+    height: 350px;
+    width: 700px;
+    margin: 20vh auto 0;
+    border-radius: 7px;
+    box-shadow: 3px 4px 10px 2px gray;
+  
+}
+
+#inner{
+    position: absolute;
+    /* background: #2d2c2c; */
+    border: 2px solid gray;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%;
+    width: 90%;
+}
+
+.img-squares{
+    position: absolute;
+    display: inline-block;
+    height: 140px;
+    width: 140px;
+    border: 1px solid gray;
+    margin: 5% 11.5%;
+    border-radius: 8px;
+   
+  
+}
+
+.one{
+    background: url('../audi1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.two{
+    background: url('../audi2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 180px;
+    
+}
+.three{
+    background: url('../audi3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 360px;
+    
+}
+
+
+#outer::before,
+#outer::after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 350px;
+    width: 700px;
+    border-radius: 7px;
+    box-shadow: 3px 4px 10px 2px gray;
+    
+}
+
+#outer::before{
+    transform: rotate(-3deg);
+    z-index: -2;
+  
+}
+
+#outer::after{
+    transform: rotate(-7deg);
+    z-index: -3;
+}
+
+/* Color palette start */
+#color-palette{
+    margin: 30vh auto 0;
+    width: 100%;
+    background-color: #2d2c2c;
+    height: 19vh;
+}
+
+#color-palette > h2{
+    position: relative;
+    color: #b7b7b7;
+    padding: 0;
+    margin: 0 0 5px 20px;
+    top: 5px;
+}
+
+.col-samples{ /* first row with 3 squares in color pallete */
+    color: #fff;
+    background-color: #fff;
+    width: 50px;
+    height: 40px;
+    border-radius: 6px;
+    display: inline-block;
+}
+ 
+.col-samples2{ /* second row with sqaures in color pallete*/
+    color: #fff;
+    background-color: #fff;
+    width: 50px;
+    height: 40px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.square{
+    margin-left: 16%;
+}
+
+.span{
+    color: #b7b7b7;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.span, .square{
+    margin-top: 10px;
+}
+
+#color-palette span{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    margin-top: -30px;
+    margin-left: 10px;
+}
+/* Color palette end */
+
+

@@ -1,0 +1,79 @@
+<div id="color-palette">
+        <h2>Color palette</h2>
+
+        <div id="col-samples1" class="col-samples square"></div>
+        <span class="span">#ffffff</span>
+        <div id="col-samples2" class="col-samples square"></div>
+        <span class="span">#ffffff</span>
+        <div id="col-samples3" class="col-samples square"></div>
+        <span class="span">#ffffff</span>
+
+        <div id="col-samples4" class="col-samples2 square"></div>
+        <span class="span">#ffffff</span>
+        <div id="col-samples5" class="col-samples2 square"></div>
+        <span class="span">#ffffff</span>
+        <div id="col-samples6" class="col-samples2 square"></div>  
+        <span class="span">#ffffff</span>
+
+    </div>
+
+
+/* Color palette start */
+#color-palette{
+    margin: 30vh auto 0;
+    width: 100%;
+    background-color: #2d2c2c;
+    height: 19vh;
+}
+
+#color-palette > h2{
+    position: relative;
+    color: #b7b7b7;
+    padding: 0;
+    margin: 0 0 5px 20px;
+    top: 5px;
+}
+
+.col-samples{ /* first row with 3 squares in color pallete */
+    color: #fff;
+    background-color: #fff;
+    width: 50px;
+    height: 40px;
+    border-radius: 6px;
+    display: inline-block;
+}
+ 
+.col-samples2{ /* second row with sqaures in color pallete*/
+    color: #fff;
+    background-color: #fff;
+    width: 50px;
+    height: 40px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.square{
+    margin-left: 16%;
+}
+
+.span{
+    color: #b7b7b7;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.span, .square{
+    margin-top: 10px;
+}
+
+#color-palette span{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    margin-top: -30px;
+    margin-left: 10px;
+}
+/* Color palette end */

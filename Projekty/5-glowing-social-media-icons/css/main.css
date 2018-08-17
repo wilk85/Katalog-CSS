@@ -1,0 +1,55 @@
+body{
+    font-size: 20px;
+    background: gray;
+}
+
+.wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    width: 75px;
+    padding: 18px 4px;
+    color: #fff;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    float: left;
+}
+
+li .fa{
+    color: #fff;
+    margin-top: 20px;
+    /* transition: all 500ms ease; */
+}
+
+li:hover:nth-child(1){
+    border: 5px solid #3b5999;
+    box-shadow: 0 0 15px #3b5999;
+}
+
+li:hover:nth-child(2){
+    border: 5px solid #4dc247;
+    box-shadow: 0 0 15px #4dc247;
+}
+
+li:hover .fa-facebook-f{
+    color: #3b5999;
+    text-shadow: 0 0 15px #3b5999;
+    transition: all 500ms ease;
+}
+
+li:hover .fa-whatsapp{
+    color: #4dc247;
+    text-shadow: 0 0 15px #4dc247;
+    transition: all 500ms ease;    
+}
